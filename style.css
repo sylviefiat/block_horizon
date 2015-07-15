@@ -1,0 +1,247 @@
+#haut-page,#bandeau-entete {
+	display: none;
+}
+.auteur-choisi {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-weight : bolder;
+	text-decoration: underline;
+	background-color: inherit;
+}
+
+.auteurIRD {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-weight : bolder;
+}
+
+.auteur-autre {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+}
+
+.enValeur {font-style : italic; }
+.lien-int {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	float:left;
+	width: 25%;
+	font-style : italic;
+	font-size: small;
+	color: #00769D;
+}
+
+.listeRes ol {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	list-style-type:decimal;
+	font: italic 1em Georgia, Times, serif;
+	font-size: 0.9em;
+	margin-bottom: 5em;
+}
+
+.listeRes ol p{
+	font: normal .9em Arial, Geneva, Helvetica,  sans-serif;
+}
+
+.listeRes li {	
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	clear: both;
+	margin-bottom: 1em;
+}
+#bas-page {
+	margin: 2em 2em;
+}
+
+#bas-page table {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	width: 100%;
+	border-collapse: collapse;
+	color: #00769D;
+	background-color: inherit;
+	padding: 2em 2em  0 2em;
+	font-size: 12px;
+}
+
+.piedHautDroite {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	text-align: right;
+}
+
+.piedBasGauche {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	border-top: 1px solid #aaaaaa;
+}
+
+.piedBasDroite {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	border-top: 1px solid #aaaaaa;
+	text-align: right;
+}
+
+.block-horizon{
+	padding:15px 15px 0;
+	color: #00769D;
+	font-size:12px;
+}
+
+.block-horizon a:link, .block-horizon a:visited {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	color: #00CC99;
+	background-color: inherit;
+	text-decoration: none;
+}
+
+.block-horizon a:hover {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+.block-horizon p {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	padding:0%;
+}
+
+.block-horizon ul {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	margin: 0;
+	padding: 0em;
+}
+
+.block-horizon li {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	margin-left: 1.5em;
+	padding: 0em;
+}
+
+.block-horizon img {
+	vertical-align: middle;
+	border: none;
+}
+
+.block-horizon h4 {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-size: 16px;
+	background: url(http://coreus.ird.nc/files/puce_right.gif) no-repeat;
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #006699;
+	text-align: left;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	border-top: 1px solid;
+	padding-left:1.5em;
+}
+
+.block-horizon h5 {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-size: 14px;
+	color: #00769D;
+	font-weight: normal;
+	text-indent: 30px;
+	font-style: italic;
+	font-weight:bold;
+}
+
+
+/* listes pour les auteurs */
+
+@media screen {	
+	
+	.listeRes {
+		width : 95%;
+		margin: 2em auto 0.5em auto;
+		text-align: justify;
+	}
+	
+	#zone-options {
+		display: block;
+		font-size: 100%;
+
+	}
+		
+	.option-legende,.option-export,
+	#options {
+		font-family: Arial, Geneva, Helvetica,  sans-serif;
+		color: #00769D;
+		width: 70%;
+		margin: 0em auto 1em auto;
+		padding: 1em;
+		border-bottom: solid 1px #ddd;
+		border-left: solid 1px #ddd;
+		border-right: solid 1px #ddd;
+		border-top: none;
+		font-size: small;
+	}
+	
+	.option-legende p {
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	color: #00769D;
+	background-color: inherit;
+	font-size: 12px;
+	margin-bottom:-10px;
+	}
+	
+	#zone-liste {
+		display: block;
+		width: 100%;
+	}
+	
+	#zone-liste p {
+		margin-bottom:-10px;
+	}
+	
+	#zone-liste .listeReds {
+		width: 90%;
+	}
+}
+
+@media print {
+	.listeRes {
+		text-align: justify;
+		font-size: 10px;
+	}
+	#zone-options {
+		float: left;
+		width: 1%;
+		display: none;
+		font-size: small;
+		color: #00769D;
+	}
+
+	#zone-options {
+		display:none;
+	}
+		
+	.option,
+	#options {
+		width: 98%;
+		margin: 0em auto 1em auto;
+		padding: 1em;
+		border-bottom: solid 1px #ddd;
+		border-left: solid 1px #ddd;
+		border-right: solid 1px #ddd;
+		border-top: none;
+		color: #00769D;
+		background-color: inherit;
+	}
+	
+}
+p.titre-options-tri, #zone-options .option-tri{
+	display:none;
+}
+p.titre-options-legende,p.titre-options-export {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0.5em 0;
+	border:solid 1px #eef;
+	text-align: left;
+	background-color: #eee;	
+	font-family: Arial, Geneva, Helvetica,  sans-serif;
+	font-size: 14px;
+	color: #00769D;
+	font-weight: normal;
+	font-style: italic;
+	font-weight:bold;
+}
+

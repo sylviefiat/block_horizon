@@ -1,0 +1,157 @@
+#haut-page,#bandeau-entete,#zone-options, .fin-page, .table thead, .table tfoot, .table td:first-child {
+	display: none;
+}
+.auteur-choisi {
+	font-weight : bolder;
+	text-decoration: underline;
+}
+
+.auteurIRD {
+	font-weight : bolder;
+}
+
+.auteur-autre {
+}
+
+.enValeur {font-style : italic; }
+.lien-int {
+	float:left;
+	width: 25%;
+	font-style : italic;
+	font-size: small;
+}
+
+.listeRes {
+}
+
+.listeRes ol {
+	list-style-type:none;
+	margin-bottom: 5em;
+	padding-left:0;
+}
+
+.listeRes ol p{
+}
+
+.listeRes li {	
+	clear: both;
+	margin-bottom: 1em;
+}
+.liste-liens-notices {
+	margin: 1em;
+}
+#bas-page {
+	margin: 2em 2em;
+}
+
+#bas-page table {
+	width: 100%;
+	border-collapse: collapse;
+	padding: 2em 2em  0 2em;
+}
+
+.piedHautDroite {
+	text-align: right;
+}
+
+.piedBasGauche {
+	border-top: 1px solid #aaaaaa;
+}
+
+.piedBasDroite {
+	border-top: 1px solid #aaaaaa;
+	text-align: right;
+}
+
+
+/* listes pour les auteurs */
+
+@media screen {	
+	
+	.listeRes {
+		width : 95%;
+		margin: 2em auto 0.5em auto;
+		text-align: justify;
+	}
+	
+	#zone-options.zone-options {
+		display: none !important;
+		font-size: 100%;
+	}
+		
+	.option-legende,.option-export,
+	#options {
+		width: 70%;
+		margin: 0em auto 1em auto;
+		padding: 1em;
+		border-bottom: solid 1px #ddd;
+		border-left: solid 1px #ddd;
+		border-right: solid 1px #ddd;
+		border-top: none;
+		font-size: small;
+	}
+	
+	.option-legende p {
+	background-color: inherit;
+	font-size: 12px;
+	margin-bottom:-10px;
+	}
+	
+	#zone-liste {
+		display: block;
+		width: 100%;
+	}
+	
+	#zone-liste p {
+		margin-bottom:-10px;
+	}
+	
+	#zone-liste .listeReds {
+		width: 90%;
+	}
+}
+
+@media print {
+	.listeRes {
+		text-align: justify;
+		font-size: 10px;
+	}
+	#zone-options.zone-options {
+		float: left;
+		width: 1%;
+		display: none !important;
+		font-size: small;
+	}
+
+	#zone-options {
+		display:none;
+	}
+		
+	.option,
+	#options {
+		width: 98%;
+		margin: 0em auto 1em auto;
+		padding: 1em;
+		border-bottom: solid 1px #ddd;
+		border-left: solid 1px #ddd;
+		border-right: solid 1px #ddd;
+		border-top: none;
+	}
+	
+}
+p.titre-options-tri, #zone-options {
+	display:none;
+}
+p.titre-options-legende,p.titre-options-export {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0.5em 0;
+	border:solid 1px #eef;
+	text-align: left;
+	background-color: #eee;	
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	font-weight:bold;
+}
+
