@@ -189,7 +189,7 @@ class Controller extends BlockController {
                 // on enlève le texte en dur qui a été rajouté aux liens (qui sont relatifs)
                 //$reponse = str_replace ('http://www.documentation.ird.fr/hor','/hor',$reponse);
                 // on recrée les liens complets (absolus)
-                return str_replace ('/ECOMAR','https://hal-univ-reunion.archives-ouvertes.fr/ECOMAR',$reponse);
+                return str_replace ('/ENTROPIE','https://hal-univ-reunion.archives-ouvertes.fr/ENTROPIE',$reponse);
         }
 
 
